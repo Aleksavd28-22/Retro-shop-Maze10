@@ -1,0 +1,85 @@
+
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="prijavaa.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Log in</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="buy.html">Buy</a>
+  <a href="aboutus.html">About us</a>
+  <a class="active" href="prijava.html">Log in</a>
+</div>
+
+<br>
+
+<div class="footer">
+  <p>Follow us on social media :</p>
+  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/?lang=sr" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+<br>
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Log in</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" >Log in</button>
+  </form>
+</div>
+<div id="div1" class="fa"></div>
+<script>
+function smile() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf118;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf119;";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 3000);
+}
+smile();
+setInterval(smile, 4000);
+</script>
+
+</body>
+
+</html>
