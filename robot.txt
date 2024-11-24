@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /private/
-Allow: /
+Disallow:
+
+Sitemap: https://aleksavd28-22.github.io/Retro-shop-Maze10/sitemap.xml
